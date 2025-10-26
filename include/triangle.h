@@ -2,7 +2,8 @@
 
 #include "figure.h"
 
-class Triangle : public Figure {
+class Triangle : public Figure
+{
 public:
     Triangle();
     ~Triangle() override;

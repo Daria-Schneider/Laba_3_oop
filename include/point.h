@@ -2,7 +2,8 @@
 
 #include <iostream>
 
-struct Point {
+struct Point
+{
     int x, y;
     friend std::ostream& operator<<(std::ostream&, const Point&);
     friend std::istream& operator>>(std::istream&, Point&);

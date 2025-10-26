@@ -1,5 +1,7 @@
 #include <gtest/gtest.h>
+
 #include "point.h"
+#include "figure.h"
 #include "triangle.h"
 #include "square.h"
 #include "rectangle.h"

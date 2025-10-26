@@ -1,9 +1,11 @@
 #pragma once
 
 #include <iostream>
+
 #include "vector-points.h"
 
-class Figure {
+class Figure
+{
 public:
     virtual ~Figure();
     void ReadPoints(std::istream& is);
@@ -12,9 +14,9 @@ public:
     virtual Point Center() const = 0;
     friend bool operator==(const Figure&, const Figure&);
     friend bool operator!=(const Figure&, const Figure&);
-    
+
     virtual explicit operator double() const;
-    
+
 protected:
     Figure();
     VectorPoints v;
